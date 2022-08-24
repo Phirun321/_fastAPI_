@@ -1,4 +1,5 @@
 ```base
+`` create env file(python -m venv env_name) and active it
 ##run : pip install -r requirements.txt
 ##cd app
 ##run command : make

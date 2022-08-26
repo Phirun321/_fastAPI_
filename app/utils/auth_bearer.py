@@ -44,7 +44,7 @@ async def verify_isAdmin(user:dict = Depends(current_user)):
     else:
         return True
         
-async def verify_isAdmin(user:dict = Depends(current_user)):
+async def verify_isSuperUser(user:dict = Depends(current_user)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="You're not super user",
@@ -56,7 +56,7 @@ async def verify_isAdmin(user:dict = Depends(current_user)):
     else:
         return True
         
-async def verify_isAdmin(user:dict = Depends(current_user)):
+async def verify_isUser(user:dict = Depends(current_user)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="You're not normal user",
